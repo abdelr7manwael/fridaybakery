@@ -1,0 +1,336 @@
+/* 
+height:auto => (0)
+background-color: (transparent)
+*/
+
+/* *=> all elements  */
+
+* {
+    margin: 0;
+    /* remove margin for all elements */
+    box-sizing: border-box;
+    font-family: 'Alegreya', serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    /* center the div between left and right */
+
+    text-align: center;
+    /* optional */
+}
+
+.clear {
+    clear: both;
+}
+
+.center {
+    text-align: center;
+}
+
+
+section {
+    padding: 120px 0;
+}
+
+.img-div img {
+    width: 90%;
+
+}
+
+.text h2 {
+    margin-bottom: 40px;
+}
+
+.text p {
+    margin: 10px 0;
+    color: grey;
+}
+
+
+section .text,
+section .img-div {
+    width: 48%;
+}
+
+/* ----------------------------------------- */
+nav {
+    background-color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99999;
+}
+
+nav .img-div {
+    float: left;
+}
+
+nav .img-div img {
+    width: 150px;
+}
+
+nav .menu {
+    float: right;
+}
+
+nav .menu ul {
+    padding: 0;
+    list-style: none;
+}
+
+nav .menu ul li {
+    display: inline-block;
+    /* short hand property */
+    /* margin: top right bottom left; */
+    margin: 15px 10px 0px 10px;
+}
+
+a {
+    color: grey;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+nav .menu ul li a:hover {
+    color: black;
+}
+
+nav .menu ul .sub-menu {
+    position: relative;
+}
+
+nav .menu ul .sub-menu ul {
+    background-color: #403d38;
+    width: 120px;
+    position: absolute;
+    visibility: hidden;
+}
+
+
+nav .menu ul .sub-menu ul li {
+    display: block;
+    margin: 0;
+    padding: 15px 10px;
+    text-align: left;
+}
+
+nav .menu ul .sub-menu ul li:hover {
+    background-color: #8e7754;
+}
+
+nav .menu ul .sub-menu ul li a {
+    color: white;
+}
+
+nav .menu ul .sub-menu:hover ul {
+
+    visibility: visible;
+}
+
+.ball {
+    display: inline-block;
+    font-size: 30px;
+    color: white;
+    border: 2px solid white;
+    margin-top: 20px;
+    padding: 8px 10px;
+    border-radius: 30px;
+}
+
+/* ------------------------------------------- */
+
+main {
+    height: 90vh;
+    /* view height */
+
+    background-image: url(../img/main.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding-top: 70px;
+}
+
+main .msg {
+    margin-top: 180px;
+    color: white;
+}
+
+main .msg .welcome {
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+main .msg h2 {
+    font-size: 80px;
+    text-transform: capitalize;
+    margin: 10px 0;
+    font-weight: normal;
+}
+
+main .msg .talk {
+    font-size: 20px;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    text-transform: capitalize;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+main .btns .btn:hover {
+    background-color: white;
+    border: 2px solid white;
+    color: black;
+}
+
+main .btns .contact {
+    border: 2px solid white;
+}
+
+main .btns .learn {
+    background-color: #8e7754;
+    border: 2px solid #8e7754;
+    margin-right: 10px;
+}
+
+
+/* 
+
+margin 
+paddin
+border
+
+
+short hand property 
+margin-top
+marigin bottom:
+
+margin: top right bottom left;
+margin: top-bottom  right-left
+margin: all
+
+border-width: 
+border-style:
+border-color:
+
+boder: 1px solid red
+
+
+*/
+
+/* who section */
+
+.who .img-div {
+    float: left;
+}
+
+
+
+
+.who .text {
+    float: right;
+    text-align: left;
+}
+
+/* ------------------------ */
+
+.location {
+    background-color: #eee;
+}
+
+.location .text {
+    float: left;
+    text-align: left;
+}
+
+.location .img-div {
+    float: right;
+}
+
+/* ------------------------------------ */
+
+.baking .item {
+    width: 32%;
+    float: left;
+    margin: 20px 5px;
+}
+
+.baking .item img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* -------------------- */
+.contact {
+    background-color: #eee;
+}
+
+.contact .text {
+    float: left;
+    text-align: left;
+}
+
+.contact .img-div {
+    float: right;
+}
+
+.contact .img-div iframe {
+    width: 90%;
+    height: 500px;
+    border: 1px solid grey;
+}
+
+/* ----------------------------------------- */
+
+
+footer .top {
+    padding: 50px 0;
+    background-color: #403d38;
+}
+
+footer .bottom {
+    padding: 50px 0;
+    background-color: #353330;
+}
+
+footer .top .box {
+    width: 24%;
+    float: left;
+    margin: 0 6px;
+    text-align: left;
+}
+
+footer .top .box h4 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+footer p {
+    color: grey;
+    margin-bottom: 10px;
+}
+
+section {
+    position: relative;
+}
+
+.sec-num {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    font-weight: bold;
+    font-size: 20px;
+}
