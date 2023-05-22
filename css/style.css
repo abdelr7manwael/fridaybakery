@@ -87,8 +87,6 @@ nav .menu ul {
 
 nav .menu ul li {
     display: inline-block;
-    /* short hand property */
-    /* margin: top right bottom left; */
     margin: 15px 10px 0px 10px;
 }
 
@@ -188,6 +186,7 @@ main .msg .talk {
     border-radius: 5px;
     margin-top: 20px;
     cursor: pointer;
+    font-weight: normal;
 }
 
 main .btns .btn:hover {
@@ -196,7 +195,7 @@ main .btns .btn:hover {
     color: black;
 }
 
-main .btns .contact {
+main .btns .cont {
     border: 2px solid white;
 }
 
